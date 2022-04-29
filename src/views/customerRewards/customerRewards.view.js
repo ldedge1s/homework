@@ -32,7 +32,7 @@ const CustomerRewardsView = () => {
     return (<>
         <Breadcrumbs aria-label="breadcrumb" style={{paddingBottom: 10}}>
             <Link underline="hover" color="inherit" href="#">
-                Chapter Homework
+                Charter Homework
             </Link>
             <Link underline="hover" color="inherit" href="#">
                 Customer Reports
