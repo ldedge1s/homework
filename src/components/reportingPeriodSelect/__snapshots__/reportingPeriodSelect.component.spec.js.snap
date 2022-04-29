@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reportingPeriodSelect component renders proper options 1`] = `
+Array [
+  <li
+    aria-selected="true"
+    class="MuiMenuItem-root MuiMenuItem-gutters Mui-selected MuiButtonBase-root Mui-focusVisible css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="select"
+    role="option"
+    tabindex="0"
+  >
+    Select
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    January - March
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    February - April
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    March - May
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    April - June
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    May - July
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    June - August
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    July - September
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    August - October
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    September - November
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+  <li
+    aria-selected="false"
+    class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
+    data-value="[object Object]"
+    role="option"
+    tabindex="-1"
+  >
+    October - December
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </li>,
+]
+`;
+
+exports[`reportingPeriodSelect component renders properly 1`] = `
+<div>
+  <label
+    class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+    id="demo-simple-select-label"
+  >
+    Reporting Period
+  </label>
+  <div
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    style="width: 220px;"
+  >
+    <div
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-labelledby="reporting-period"
+      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      role="button"
+      tabindex="0"
+    >
+      Select
+    </div>
+    <input
+      aria-hidden="true"
+      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      tabindex="-1"
+      value="select"
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+      data-testid="ArrowDropDownIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden="true"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        class="css-1ftyaf0"
+      >
+        <span>
+          Reporting Period
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
