@@ -16,7 +16,7 @@ import {
 
 const purchaseRewardsService = {
     calculateRewardPointsForSinglePayment(payment) {
-        const { amount } = payment;
+        const {amount} = payment;
 
         if (amount > THRESHOLD_HIGH) {
             return THRESHOLD_LOW * POINTS_PER_USD_ABOVE_LOW + Math.floor(amount - THRESHOLD_HIGH) * POINTS_PER_USD_ABOVE_HIGH;

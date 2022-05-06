@@ -1,7 +1,12 @@
 const {
     purchaseRewardsService,
 } = require("./purchaseRewards.service");
-const {THRESHOLD_LOW, THRESHOLD_HIGH, POINTS_PER_USD_ABOVE_LOW, POINTS_PER_USD_ABOVE_HIGH} = require("./purchaseRewards.constants");
+const {
+    THRESHOLD_LOW,
+    THRESHOLD_HIGH,
+    POINTS_PER_USD_ABOVE_LOW,
+    POINTS_PER_USD_ABOVE_HIGH
+} = require("./purchaseRewards.constants");
 
 describe('purchaseRewards service', () => {
     describe('.calculateRewardPointsForSinglePayment', () => {
@@ -72,13 +77,13 @@ describe('purchaseRewards service', () => {
         jest.spyOn(purchaseRewardsService, 'calculateRewardPointsForSinglePayment').mockImplementation(payment => payment.amount);
 
         const mockPayments = [
-            { amount: 10 },
-            { amount: 20 },
-            { amount: 30 },
-            { amount: 40 },
+            {amount: 10},
+            {amount: 20},
+            {amount: 30},
+            {amount: 40},
         ];
 
-        const totalAmount = mockPayments.reduce((total, { amount }) => total + amount, 0);
+        const totalAmount = mockPayments.reduce((total, {amount}) => total + amount, 0);
 
         expect(purchaseRewardsService.calculateRewardPointsForPayments(mockPayments)).toEqual(totalAmount);
     });

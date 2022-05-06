@@ -1,5 +1,9 @@
+let nextMockId = 1;
+
 const createMockPurchase = (customerId, day, month, amount) => {
     return {
+        id: nextMockId++,
+
         //ASSIGNMENT DOC: I'm assuming timezones are not an issue - proper TZ solution would greatly extend code required
         ts: +new Date(2022, month - 1, day),
         customerId,
@@ -12,6 +16,7 @@ const CLIENTS = {
     LOW_SPENDER: 'LOW_SPENDER',
     HIGH_SPENDER: 'HIGH_SPENDER',
     SINGLE_TIME_CLIENT: 'SINGLE_TIME_CLIENT',
+    BELOW_REWARDS_SPENDER: 'BELOW_REWARDS_SPENDER'
 };
 
 const clientPurchaseHistoryMockData = [];
@@ -42,6 +47,18 @@ for(let i=0; i<3; i++){ //quick multiply mock data over other months
 
         /*****/
         createMockPurchase(CLIENTS.SINGLE_TIME_CLIENT, 23, monthOffset + 2, 99),
+
+        /*****/
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 1, monthOffset + 1, 1),
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 7, monthOffset + 1, 50),
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 14, monthOffset + 1, 3),
+
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 11, monthOffset + 2, 4),
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 27, monthOffset + 2, 44),
+
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 1, monthOffset + 3, 49),
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 8, monthOffset + 3, 7),
+        createMockPurchase(CLIENTS.BELOW_REWARDS_SPENDER, 20, monthOffset + 3, 8),
     ]);
 }
 

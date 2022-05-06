@@ -5,12 +5,12 @@
 import React from "react";
 import {render, fireEvent, within} from '@testing-library/react';
 import '@testing-library/jest-dom';
-import {ReportingPeriodSelectComponent} from "./reportingPeriodSelect.component";
+import {ReportingPeriodSelect} from "./reportingPeriodSelect.component";
 
 describe('reportingPeriodSelect component', () => {
     it('renders properly', () => {
         //given
-        const {container} = render(<ReportingPeriodSelectComponent />);
+        const {container} = render(<ReportingPeriodSelect/>);
 
         //then
         expect(container).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe('reportingPeriodSelect component', () => {
 
     it('renders proper options', () => {
         //given
-        const {getByRole} = render(<ReportingPeriodSelectComponent />);
+        const {getByRole} = render(<ReportingPeriodSelect/>);
 
         //when
         fireEvent.mouseDown(getByRole('button'));
@@ -31,7 +31,7 @@ describe('reportingPeriodSelect component', () => {
     it('calls onPeriodChange properly', () => {
         //given
         const handleChange = jest.fn();
-        const {getByRole} = render(<ReportingPeriodSelectComponent onPeriodChange={handleChange} />);
+        const {getByRole} = render(<ReportingPeriodSelect onPeriodChange={handleChange}/>);
 
         //when
         fireEvent.mouseDown(getByRole('button'));
@@ -42,7 +42,7 @@ describe('reportingPeriodSelect component', () => {
 
         //then
         expect(handleChange).toHaveBeenCalledTimes(1);
-        expect(handleChange).toHaveBeenNthCalledWith(1, { start: 1, end: 3 });
+        expect(handleChange).toHaveBeenNthCalledWith(1, {start: 1, end: 3});
     });
 });
 

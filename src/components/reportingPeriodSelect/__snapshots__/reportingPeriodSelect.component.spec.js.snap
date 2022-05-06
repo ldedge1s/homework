@@ -146,8 +146,7 @@ exports[`reportingPeriodSelect component renders properly 1`] = `
     Reporting Period
   </label>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
-    style="width: 220px;"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary css-46xaai-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"

@@ -5,11 +5,11 @@ const CLIENT_PURCHASE_ENDPOINT_URLS = {
 };
 
 const clientPurchaseEndpoint = {
-    loadHistory(period){
+    loadHistory(period) {
         return axios.get(CLIENT_PURCHASE_ENDPOINT_URLS.PURCHASE_HISTORY(period))
-            .catch(console.error) //ASSIGNMENT DOC: extremely basic "handler" just to see problems if they exist.
+            .catch(console.error) //ASSIGNMENT DOC: extremely basic global "handler" just to see problems if they exist.
             .then(res => res.data)
-        ;
+            ;
     }
 };
 

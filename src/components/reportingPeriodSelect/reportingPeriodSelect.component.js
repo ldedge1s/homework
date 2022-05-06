@@ -3,6 +3,8 @@ import Select from "@mui/material/Select";
 import React, {useMemo, useCallback} from "react";
 import MenuItem from "@mui/material/MenuItem";
 import {MONTH_LABELS} from "../../constants/monthLabels";
+import PropTypes from "prop-types";
+import {styled} from "@mui/material";
 
 const reportingPeriod = 3;
 const reportingPeriodEndOffset = reportingPeriod - 1;
@@ -13,7 +15,11 @@ const selectValueOption = {
     label: 'Select'
 };
 
-const ReportingPeriodSelectComponent = ({value, onPeriodChange}) => {
+const StyledSelect = styled(Select)({
+    width: 220
+});
+
+const ReportingPeriodSelect = ({value, onPeriodChange}) => {
     const optionsData = useMemo(() => {
         const newOptionsData = [selectValueOption];
         for (let i = 0; i <= maxReportingStartMonthIdx; i++) {
@@ -31,28 +37,27 @@ const ReportingPeriodSelectComponent = ({value, onPeriodChange}) => {
     }, []);
 
     const handleChange = useCallback((evt) => {
-        if(onPeriodChange){
+        if (onPeriodChange) {
             const newValue = evt?.target?.value;
-            if(newValue === selectValueOption.value){
+            if (newValue === selectValueOption.value) {
                 onPeriodChange(undefined);
-            }else{
+            } else {
                 onPeriodChange(newValue);
             }
         }
     }, [onPeriodChange])
 
-    if(!value){
+    if (!value) {
         value = selectValueOption.value;
     }
 
     return (
         <>
             <InputLabel id="demo-simple-select-label">Reporting Period</InputLabel>
-            <Select
+            <StyledSelect
                 labelId="reporting-period"
                 label="Reporting Period"
                 value={value}
-                style={{width: 220}}
                 onChange={handleChange}
             >
                 {optionsData.map((data, idx) => (
@@ -60,11 +65,24 @@ const ReportingPeriodSelectComponent = ({value, onPeriodChange}) => {
                         {data.label}
                     </MenuItem>
                 ))}
-            </Select>
+            </StyledSelect>
         </>
     );
 }
 
+ReportingPeriodSelect.propTypes = {
+    value: PropTypes.shape({
+        value: PropTypes.string,
+        label: PropTypes.string
+    }),
+    onPeriodChange: PropTypes.func
+};
+
+ReportingPeriodSelect.defaultProps = {
+    onPeriodChange: () => {
+    },
+};
+
 export {
-    ReportingPeriodSelectComponent
+    ReportingPeriodSelect
 }
