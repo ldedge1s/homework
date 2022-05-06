@@ -6,7 +6,7 @@
 - All of the mocked payment data can be found in `mockApi/clientPurchaseHistory.mock.js`
 
 # Important addition:
-- You can see detailed reward information by hovering mouse over monthly gained points of any user in the summary view.
+- You can see detailed reward information by clicking on monthly gained points of any user in the summary view.
 
 # Requirements:
 - NodeJS
